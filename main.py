@@ -24,7 +24,7 @@ def shorten_link(headers, users_url):
 
 def count_clicks(headers, users_url):
     headers = {
-        "Authorization": f"Bearer {apy_bitly_token}"
+        "Authorization": f"Bearer {api_bitly_token}"
     }
     parsed_url = urlparse(users_url)
     url_without_scheme = f"{parsed_url.netloc}{parsed_url.path}"
